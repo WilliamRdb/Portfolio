@@ -1,0 +1,124 @@
+.home {
+  display: flex;
+  justify-content: space-around;
+  margin: 5rem;
+  &__left {
+      opacity: 0;
+      transform: translateY(-30px);
+      animation: apparition 0.5s 0.6s ease-out forwards;
+      &__title {
+          margin-bottom: 1rem;
+      }
+      &__description {
+          margin-bottom: 1rem;
+      }
+      &__spe {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-bottom: 3rem;
+          &__circle {
+              color: #ff8700;
+              margin-right: 1rem;
+          }
+          &__content {
+              margin-right: 2rem;
+          }
+          
+      }
+      &__link {
+          &__button {
+              font-family: Raleway;
+              font-size: 1rem;
+              padding: 1rem 1.5rem;
+              margin-right: 3rem;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+              border-radius: 30px;
+              background-color: #f5f5f580;
+              &:hover {
+                  background-color: #ff8700;
+                  color: white;
+              }
+          }
+      }
+  }
+  &__right {
+      opacity: 0;
+      transform: translateY(-30px);
+      animation: apparition 1.4s 0.5s ease-out forwards;
+      &__circle {
+          &__picture {
+              width: 150px;
+              border-radius: 5%;
+              box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+              opacity: 0;
+              transform: translateY(-30px);
+              animation: apparition 1.5s 0.2s ease-out forwards;
+          }
+      }
+  }
+}
+
+@keyframes apparition {
+  100%{
+      opacity:1;
+      transform: none;
+  }
+}
+
+@media screen and (max-width: 980px){
+  .home {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 3rem;
+      &__right {
+          margin-bottom: 2rem;
+          &__circle {
+              display: flex;
+              justify-content: center;
+          }
+      }
+      &__left {
+          &__link {
+              &__button {
+                  margin-bottom: 1rem;
+              }
+          }
+      }
+  }
+}
+
+@media screen and (max-width: 670px){
+  .home{
+      &__left{
+          &__spe{
+              &__circle{
+                  display: none;
+              }
+              &__content {
+                  color: #ff8700;
+                  font-weight: bold;
+              }
+          }
+          &__link {
+              &__button {
+                  margin-bottom: 1rem;
+              }
+          }
+      }
+  }  
+}
+
+@media screen and (max-width: 415px){
+  .home{
+      &__left{
+          &__spe{
+              display: flex;
+              flex-wrap: wrap;
+              &__content {
+                  margin-bottom: 1rem;
+              }
+          }
+      }
+  }
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 1.5s 1s ease-out forwards;
+    &__logo {
+        width: 30%;
+        &__item {
+            width: 30%;
+            background-color: transparent;
+        }
+    }
+    &__links {
+        &__list {
+            display: flex;
+            &__item {
+                margin-right: 2rem;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+    &__menu {
+        &__nav{
+            display: flex;
+            padding: 0.5rem;
+            
+            &__item {
+                margin-left: 2rem;
+                color: #000;
+                padding: 0.5rem;
+                &:hover {
+                    cursor: pointer;
+                    color: #ff8700;
+                    transition: 0.3s ease-in-out;
+                }
+                & .active {
+                    font-weight: bold;
+                    padding: 0.5rem;
+                    color: #ff8700;
+                    border-bottom: 1px solid #ff8700;
+                }
+            }
+        }
+        &__hamburger {
+            display: none;
+        }
+    }
+}
+
+@keyframes apparition {
+    100% {
+        opacity:1;
+        transform:none;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    .header {
+        margin-top: 1rem;
+        &__logo {
+            width: 300px;
+        }
+        &__menu {
+            &__nav {
+                display: none;
+            }
+            &__hamburger {
+                z-index: 10;
+                position: relative;
+                cursor: pointer;
+                display: block;
+                & span {
+                    display: block;
+                    width: 33px;
+                    height: 4px;
+                    margin-bottom: 5px;
+                    position: relative;
+                    background: #ff8700;
+                    border-radius: 3px;
+                    z-index: 1;
+                }
+                & ul {
+                    position: absolute;
+                    top: 2rem;
+                    // left: -1.5rem;
+                    display: none;
+                    & li {
+                        margin-bottom: 1rem;
+                        &:nth-child(1) {
+                            margin-top: 1rem;
+                        }
+                    }
+                }
+            }
+            &__hamburger.active{
+                
+                & div {
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    background-color: #205E6F;
+                    width: 70vw;
+                    height: 30vh;
+                }
+                & ul {
+                    z-index: 999;
+                    position: absolute;
+                    top: 27%;
+                    right: 45%;
+                    display: block;
+                }
+                & li {
+                    color: white;
+                }
+            } 
+            }
+        
+    }
+};
+@media screen and (max-width: 460px){
+    .header {
+        margin-top: 1rem;
+        &__logo {
+            min-width: 150px;
+        }
+    }
+}

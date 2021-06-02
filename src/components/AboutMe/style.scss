@@ -1,0 +1,209 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: 4rem auto;
+  &__left {
+      width: 100%;
+      margin: 0 auto 5rem;
+      &__picture {
+          background-image: url('../../assets/images/nubelson-fernandes-gTs2w7bu3Qo-unsplash.jpg');
+          background-size: cover;
+          background-attachment: fixed;
+          height: 200px;
+          background-position: 50% 40%;
+          margin: 0 auto;
+          opacity: 0.8;
+          margin-bottom: 3rem;
+          border-radius: 1rem;
+          display: flex;
+          width: 78%;
+          justify-content: center;
+          align-items: center;
+          &__title {
+              text-transform: uppercase;
+              text-shadow: 4px 2px 8px rgba(10,1,15,0.83);
+              color: white;
+              font-size: 3rem;
+          }
+          &__item {
+              width: 250px;
+          }
+      }
+  }
+  &__right {
+      width: 70%;
+      margin: 0 auto;
+      &__resume {
+          &__content {
+              margin-bottom: 5rem;
+              letter-spacing: 0.1rem;
+              line-height: 2rem;
+              &__span {
+                  display: inline-block;
+                  font-size: 2rem;
+                  font-weight: bold;
+                  margin-right: 1.5rem;
+                  margin-bottom: 1.5rem;
+                  color: #205E6F;
+              }
+              &__span2 {
+                  font-size: 1.5rem;
+                  color: #205E6F;
+              }
+          }
+      }
+      &__skills {
+          &__title {
+              font-size: 1.2rem;
+              margin-bottom: 1.5rem;
+          }
+          &__tags {
+              display: flex;
+              flex-wrap: wrap;
+              &__item {
+                  cursor: pointer;
+                  margin: .5rem .5rem .5rem 0;
+                  padding: .5rem 1rem; 
+                  border-radius: 50px;
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  background-color: #f5f5f580;
+                  &:hover{
+                      animation: 0.3s ease-in-out;
+                      transform: scale(1.1);
+                      background-color: #ff8700;
+                  }
+              }
+          }
+      }
+  }
+}
+.experiences {
+  display: flex;
+  width: 70%;
+  margin: 2rem auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+      display: flex;
+      margin-bottom: 2rem;
+      &__content {
+          cursor: pointer;
+          border-radius: .5rem;
+          margin: 2rem;
+          padding: .5rem;
+          border: 1px solid #ff8700;
+          transition: background-color 0.3s ease-in-out;
+          &:hover {
+              color: #ff8700;
+              background-color: #ff8700;
+              color: white;
+          }
+      }
+  }
+  &__studies {
+      display: flex;
+      flex-direction: column;
+      &__item {
+          margin-bottom: 8rem;
+          padding: 2rem;
+          background: rgba( 255, 255, 255, 0.7 );
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 4.0px );
+          -webkit-backdrop-filter: blur( 4.0px );
+          border-radius: 10px;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
+          &__title {
+              font-weight: bold;
+              margin-bottom: 1rem;
+          }
+          &__date {
+              font-style: italic;
+              margin-bottom: 1rem;
+          }
+          &__infos {
+              font-style: italic;
+              margin-bottom: 1rem;
+          }
+          &__description {
+              margin-bottom: 1rem;
+              &__list {
+                  margin-left: 2rem;
+                  margin-bottom: 1rem;
+                  &__item {
+                      font-style: italic;
+                  }
+              }
+              &__link {
+                  color: blue;
+                  &:hover {
+                      color: #ff8700;
+                  }
+
+              }
+          }
+      }
+  }
+  &__jobs {
+      display: flex;
+      flex-direction: column;
+      &__item {
+          margin-bottom: 8rem;
+          padding: 2rem;
+          background: rgba( 255, 255, 255, 0.7 );
+          box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+          backdrop-filter: blur( 4.0px );
+          -webkit-backdrop-filter: blur( 4.0px );
+          border-radius: 10px;
+          border: 1px solid rgba( 255, 255, 255, 0.18 );
+          &__title {
+              font-weight: bold;
+              margin-bottom: 1rem;
+          }
+          &__date {
+              font-style: italic;
+              margin-bottom: 1rem;
+          }
+          &__infos {
+              font-style: italic;
+              margin-bottom: 1rem;
+              &__link {
+                  color: blue;
+                  &:hover {
+                      color: #ff8700;
+                  }
+              }
+          }
+          &__description {
+              margin-bottom: 1rem;
+              &__list {
+                  margin-left: 2rem;
+                  margin-bottom: 1rem;
+                  &__item {
+                      font-style: italic;
+                  }
+              }
+              &__link {
+                  color: blue;
+                  &:hover {
+                      color: #ff8700;
+                  }
+
+              }
+          }
+      }
+  }
+}
+@media screen and (max-width: 680px){
+  .about {
+      &__left {
+          &__picture {
+              &__title {
+                  text-align: center;
+              }
+          }
+      }
+  }
+}

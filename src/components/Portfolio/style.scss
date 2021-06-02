@@ -1,0 +1,125 @@
+.portfolio {
+margin: 3rem;
+&__img {
+    background-image: url('../../assets/images/joan-gamell-ZS67i1HLllo-unsplash.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 200px;
+    background-position: 50% 40%;
+    margin: 0 auto;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    display: flex;
+    width: 78%;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        text-transform: uppercase;
+        text-shadow: 4px 2px 8px rgba(10,1,15,0.83);
+        color: white;
+        font-size: 3rem;
+    }
+}
+&__main {
+    display: flex;
+    justify-content: center;
+    &__content {
+        display: flex;
+        // flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__list {
+            margin: 2rem;
+            width: 40%;
+            &:hover {
+                // animation: .3s ease-in-out;
+                transform: scale(1.03);
+            }
+            &__link{
+                
+            }
+            &__repo {
+                background: rgba( 255, 255, 255, 0.5 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 4.0px );
+                -webkit-backdrop-filter: blur( 4.0px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                &__title {
+                    font-weight: bold;
+                    margin-bottom: 1rem;
+                }
+                &__description {
+                    margin-bottom: 1rem;
+                    width: 80%;
+                    overflow: hidden;
+                }
+                &__other {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 2rem;
+                    &__count {
+                        margin-bottom: 1rem;
+                    }
+                    &__lang {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media screen and (max-width: 1300px) {
+
+}
+
+@media screen and (max-width: 910px) {
+.portfolio {
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__content{
+            &__list{
+                &__repo{
+                    &__other{
+                    }
+                }
+            }
+        }
+    }
+    &__img{
+        &__title {
+            text-align: center;
+        }
+    }
+}
+}
+@media screen and (max-width: 820px) {
+.portfolio {
+    margin: 0 auto;
+    &__main {
+        
+    }
+}
+}
+@media screen and (max-width: 450px) {
+.portfolio {
+    margin: 0 auto;
+    &__main {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}
