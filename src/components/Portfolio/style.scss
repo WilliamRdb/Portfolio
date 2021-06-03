@@ -36,9 +36,6 @@ margin: 3rem;
                 // animation: .3s ease-in-out;
                 transform: scale(1.03);
             }
-            &__link{
-                
-            }
             &__repo {
                 background: rgba( 255, 255, 255, 0.5 );
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -90,10 +87,6 @@ margin: 3rem;
         &__content{
             &__list{
                 width: 100%;
-                &__repo{
-                    &__other{
-                    }
-                }
             }
         }
     }
@@ -107,9 +100,6 @@ margin: 3rem;
 @media screen and (max-width: 820px) {
 .portfolio {
     margin: 0 auto;
-    &__main {
-        
-    }
 }
 }
 @media screen and (max-width: 450px) {
