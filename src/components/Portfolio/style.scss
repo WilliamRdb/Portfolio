@@ -80,7 +80,7 @@ margin: 3rem;
 
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 1000px) {
 .portfolio {
     &__main {
         display: flex;
@@ -89,6 +89,7 @@ margin: 3rem;
         align-items: center;
         &__content{
             &__list{
+                width: 100%;
                 &__repo{
                     &__other{
                     }
