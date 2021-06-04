@@ -32,7 +32,7 @@ const AboutMe = () => {
               <br />
               Je suis à la recherche constantes de nouvelles connaissances
               (Junior for life) et peauffine aux petits oignons
-              les projets sur lequels je me lance.
+              les projets sur lesquels je me lance.
               <br />
               <br />
               Sportif ⚽️ 🏈, danseur 🕺🏼 et amateur de jeux vidéo 🎮 ,
