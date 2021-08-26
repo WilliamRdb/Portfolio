@@ -10,6 +10,7 @@ const AboutMe = () => {
   };
   return (
     <>
+    <section className="section">
       <div className="about">
         <div className="about__left">
           <div className="about__left__picture">
@@ -187,7 +188,22 @@ const AboutMe = () => {
             </div>
           </div>
         )}
+        <div className="experiences__title">
+          <span
+            className="experiences__title__content"
+            onClick={handleOnClick}
+          >
+            Formations
+          </span>
+          <span
+            className="experiences__title__content"
+            onClick={handleOnClick}
+          >
+            Expériences
+          </span>
+        </div>
       </div>
+      </section>
     </>
   );
 };

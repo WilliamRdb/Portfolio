@@ -1,4 +1,7 @@
 .portfolio {
+height: 50vh;
+overflow: hidden;
+overflow-y: scroll;
 margin: 3rem;
 &__img {
     background-image: url('../../assets/images/joan-gamell-ZS67i1HLllo-unsplash.jpg');

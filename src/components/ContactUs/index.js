@@ -32,60 +32,64 @@ export default function ContactUs() {
   return (
     <div className="contact">
       <form className="contact-form" onSubmit={sendEmail}>
-        <input
-          className="contact-form__input"
-          type="hidden"
-          name="contact_number"
-          required
-        />
-        <input
-          className="contact-form__input"
-          type="text"
-          placeholder="Nom"
-          name="user_name"
-          required
-          value={lastName}
-          onChange={(e) => {
-            setLastName(e.target.value);
-          }}
-        />
-        <input
-          className="contact-form__input"
-          type="text"
-          placeholder="Prénom"
-          name="user_name"
-          required
-          value={firstName}
-          onChange={(e) => {
-            setFirstName(e.target.value);
-          }}
-        />
-        <input
-          className="contact-form__input"
-          type="email"
-          placeholder="Email"
-          name="user_email"
-          required
-          value={email}
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-        />
-        <textarea
-          className="contact-form__area"
-          name="message"
-          placeholder="Votre message"
-          required
-          value={text}
-          onChange={(e) => {
-            setText(e.target.value);
-          }}
-        />
-        <input
-          className="contact-form__btn"
-          type="submit"
-          value="Envoyer !"
-        />
+        <div className="contact-form-left">
+          <input
+            className="contact-form-left__input"
+            type="hidden"
+            name="contact_number"
+            required
+          />
+          <input
+            className="contact-form-left__input"
+            type="text"
+            placeholder="Nom"
+            name="user_name"
+            required
+            value={lastName}
+            onChange={(e) => {
+              setLastName(e.target.value);
+            }}
+          />
+          <input
+            className="contact-form-left__input"
+            type="text"
+            placeholder="Prénom"
+            name="user_name"
+            required
+            value={firstName}
+            onChange={(e) => {
+              setFirstName(e.target.value);
+            }}
+          />
+          <input
+            className="contact-form-left__input"
+            type="email"
+            placeholder="Email"
+            name="user_email"
+            required
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+          <textarea
+            className="contact-form-left__area"
+            name="message"
+            placeholder="Votre message"
+            required
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value);
+            }}
+          />
+        </div>
+        <div className="contact-form-right">
+          <input
+            className="contact-form__btn"
+            type="submit"
+            value="Envoyer !"
+          />
+        </div>
       </form>
     </div>
   );

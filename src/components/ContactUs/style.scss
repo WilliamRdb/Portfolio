@@ -1,9 +1,14 @@
 .contact {
   width: 80%;
-  margin: 5rem auto;
+  margin: 1rem auto 2rem;
+  height: 50vh;
+  overflow: hidden;
+  overflow-y: scroll;
   &-form {
       display: flex;
-      flex-direction: column;
+      &-left{
+          display: flex;
+          flex-direction: column;
       &__input {
           width: 50%;
           margin: 2rem auto 0;
@@ -37,6 +42,7 @@
               }
           }
       }
+    }
       &__btn {
           font-family: Raleway;
           cursor: pointer;
