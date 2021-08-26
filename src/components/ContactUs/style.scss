@@ -6,11 +6,14 @@
   overflow-y: scroll;
   &-form {
       display: flex;
+      align-items: center;
+    justify-content: center;
       &-left{
           display: flex;
           flex-direction: column;
+          margin-right: 5rem;
       &__input {
-          width: 50%;
+          width: 25vw;
           margin: 2rem auto 0;
           padding: .5rem;
           &::placeholder {
@@ -25,7 +28,7 @@
           }
       }
       &__area {
-          width: 50%;
+          width: 25vw;
           height: 250px;
           margin: 2rem auto 0;
           padding: .5rem;
